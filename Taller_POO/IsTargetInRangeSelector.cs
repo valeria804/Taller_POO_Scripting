@@ -24,7 +24,7 @@ namespace Taller_POO
         {
             float dist = Vector2D.Distance(_agent.Position, _target);
             Console.WriteLine($"Chequeando distancia: {dist:F2} (umbral: {_validDistance})");
-            return dist > _validDistance;
+            return dist <= _validDistance;
         }
     }
 
